@@ -12,4 +12,4 @@ class Song:
 	def getSongName(self):
 		return self.song_name
 
-	def getFiles(path)
+	

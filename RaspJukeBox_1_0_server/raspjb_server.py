@@ -2,19 +2,21 @@
 
 import sys
 from raspjb_song_class import Song
-
+from SongQeueu import SongQeueu
 
 
 
 def createSongList():
-	song=Song("hovno","hovno",1234)
-	print song.getSongName()
+	x=SongQeueu()
+	return x
 
 
 def serverStart(port):
 	print "Starting server on: " + port
-	createSongList()
-
+	print "Searching and creating song qeueu..."
+	qeueu=createSongList()
+	song = Song("name", "~/Music", "1234")
+	qeueu.addToQeueu(song)
 if __name__ == "__main__":
 	print "Configuring port: "
 	port="1234"
