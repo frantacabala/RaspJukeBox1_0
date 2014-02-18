@@ -8,7 +8,7 @@ class SongQeueu:
 		self.song_number=0
 		self.song_qeueu=[]
 
-	def addToQeueu(self,Song):
-		self.song_qeueu.append(Song)
-		print "added"
+	def addToEndQeueu(self,song):
+		self.song_qeueu.append(song)
+		s1=Song(song.song_name, song.song_path, song.song_length)
 

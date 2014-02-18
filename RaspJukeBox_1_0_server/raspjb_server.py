@@ -16,7 +16,8 @@ def serverStart(port):
 	print "Searching and creating song qeueu..."
 	qeueu=createSongList()
 	song = Song("name", "~/Music", "1234")
-	qeueu.addToQeueu(song)
+	qeueu.addToEndQeueu(song)
+
 if __name__ == "__main__":
 	print "Configuring port: "
 	port="1234"

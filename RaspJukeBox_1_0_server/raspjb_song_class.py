@@ -1,6 +1,6 @@
 import sys
-import pyglet
-#sudo apt-get install libavbin-dev libavbin0
+import pygame
+#sudo apt-get install python-pygame 
 import os.path
 
 class Song:
@@ -9,7 +9,3 @@ class Song:
 		self.song_path=filepath
 		self.song_length=length
 
-	def getSongName(self):
-		return self.song_name
-
-	
